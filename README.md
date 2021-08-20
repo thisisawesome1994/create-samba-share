@@ -8,6 +8,7 @@ sudo addgroup smbgroup
 sudo adduser Joannes
 sudo smbpasswd -a Joannes
 sudo smbpasswd -e Joannes
+usermod -aG smbgroup Joannes
 sudo mkdir -p /samba/protected
 cd /samba/
 sudo chown -R root:smbgroup protected
